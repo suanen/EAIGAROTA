@@ -1,0 +1,701 @@
+/* CSS -LINHAS BASES, ESTABELECENDO AS MARGENS */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+body{ /*aqui será as definições basicas para o corpo*/
+    font-family: Optima;
+    background-color: rgb(255, 255, 255);
+    color: #ff83ae
+}
+header{
+    text-align: center;
+    padding: 20px;
+    background-color: #ff83ae;
+}
+.titlestyle{
+    font-family: 'Dancing Script', cursive;
+    color: #db2a69;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 100px;
+}
+@media (max-width: 600px) {
+    .titlestyle {
+        font-size: 50px; /* Reduz para um tamanho adequado em celulares */
+    }
+}
+
+.subtitulo-site{
+    font-size: 20px;
+    font-weight: normal;
+    color: #db2a69;
+    margin-top: 2%;
+}
+.navegacao { /*aqui é a parte que monta a parte da barra de navegação*/
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #febcd3;
+    padding: 15px;
+    list-style: none;
+}
+.navegacao a{ /*cor da letra*/
+    text-decoration: none;
+    color: #db2a69;
+    font-size: 16px;
+}
+.navegacao a:hover{  /*pra passar o mouse e ficardesta cor*/
+    color: #fc6fa1;
+}
+body{ /*estilo geral da pagina, bg e resto*/
+    background-color: #feeff5;
+    font-family: Optima;
+    color: #db2a69;
+}
+main{
+    padding: 20px;
+    text-align: center;
+}
+.titlemain{
+    font-size: 2em;
+    font: bolder;
+    color: #c6285f;
+    margin-bottom: 10px;
+}
+.texto-base{
+    font-size: 1em;
+    line-height: 1.3;
+    color: #db2a69;
+    max-width: 600;
+    margin: 0 auto;
+}
+@media (max-width: 600px) { /* Ajuste adicional para dispositivos móveis */
+    .titlemain{
+        font-size: 2em;
+    }
+    .texto-base{
+        font-size: 1em;
+    }
+}
+/* Estilo para a seção de dicas */
+.dicas {
+    padding: 20px;
+    background-color: #febcd3; /* Fundo para a seção */
+    border-radius: 8px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.title-selection {
+    font-size: 28px;
+    color: #db2a69;
+    margin-bottom: 10px;
+}
+
+.dicas p {
+    font-size: 16px;
+    color: #db2a69;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o título e conteúdo da dica específica */
+.dica-composicao {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid #febcd3;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.title-dica {
+    font-size: 24px;
+    color: #db2a69;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.conteudo-dica {
+    display: flex;
+    flex-direction: column; /* Padrão para telas menores */
+    align-items: center;
+    gap: 20px;
+}
+
+/* Texto da dica */
+.texto-dica {
+    font-size: 16px;
+    color: #db2a69;
+    line-height: 1.6;
+    max-width: 600px;
+    text-align: center;
+    padding: 0 15px;
+}
+
+/* Imagens da dica */
+.imagens-dica {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.foto-dica {
+    max-width: 150px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Layout responsivo */
+@media (min-width: 768px) {
+    .conteudo-dica {
+        flex-direction: row; /* Alinha texto e imagens lado a lado em telas maiores */
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .texto-dica {
+        max-width: 400px;
+    }
+
+    .imagens-dica {
+        flex-direction: column; /* Imagens uma embaixo da outra */
+    }
+}
+/* Estilo para a seção de dicas */
+.dicas {
+    padding: 20px;
+    background-color: #febcd3; /* Fundo para a seção */
+    border-radius: 8px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.title-selection {
+    font-size: 28px;
+    color: #db2a69;
+    margin-bottom: 10px;
+}
+
+.dicas p {
+    font-size: 16px;
+    color: #db2a69;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o título e conteúdo das dicas */
+.dica-composicao, .dica-piranha {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid #febcd3;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.title-dica {
+    font-size: 24px;
+    color: #db2a69;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.conteudo-dica {
+    display: flex;
+    flex-direction: column; /* Padrão para telas menores */
+    align-items: center;
+    gap: 20px;
+}
+
+/* Texto da dica */
+.texto-dica {
+    font-size: 16px;
+    color: #db2a69;
+    line-height: 1.6;
+    max-width: 600px;
+    text-align: center;
+    padding: 0 15px;
+}
+
+/* Imagens da dica */
+.imagens-dica {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.foto-dica {
+    max-width: 150px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Layout responsivo */
+@media (min-width: 768px) {
+    .conteudo-dica {
+        flex-direction: row; /* Alinha texto e imagens lado a lado em telas maiores */
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .texto-dica {
+        max-width: 400px;
+    }
+
+    .imagens-dica {
+        flex-direction: column; /* Imagens uma embaixo da outra */
+    }
+}
+/* Estilo para a seção de dica do gloss */
+.dica-gloss {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid #febcd3;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.title-dica {
+    font-size: 24px;
+    color: #db2a69;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.conteudo-dica {
+    display: flex;
+    flex-direction: column; /* Padrão para telas menores */
+    align-items: center;
+    gap: 20px;
+}
+
+/* Texto da dica */
+.texto-dica {
+    font-size: 16px;
+    color: #db2a69;
+    line-height: 1.6;
+    max-width: 600px;
+    text-align: center;
+    padding: 0 15px;
+}
+
+/* Imagem da dica */
+.imagens-dica {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.foto-dica {
+    max-width: 150px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Layout responsivo */
+@media (min-width: 768px) {
+    .conteudo-dica {
+        flex-direction: row; /* Alinha texto e imagem lado a lado em telas maiores */
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .texto-dica {
+        max-width: 400px;
+    }
+
+    .imagens-dica {
+        flex-direction: column; /* Imagem uma embaixo da outra */
+    }
+}
+/* Estilo para a seção de dicas */
+.dica-protetor {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid #febcd3;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.title-dica {
+    font-size: 24px;
+    color: #db2a69;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.conteudo-dica {
+    display: flex;
+    flex-direction: column; /* Padrão para telas menores */
+    align-items: center;
+    gap: 20px;
+}
+
+/* Texto da dica */
+.texto-dica {
+    font-size: 16px;
+    color: #db2a69;
+    line-height: 1.6;
+    max-width: 600px;
+    text-align: center;
+    padding: 0 15px;
+}
+
+/* Imagens da dica */
+.imagens-dica {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.foto-dica {
+    max-width: 150px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Layout responsivo */
+@media (min-width: 768px) {
+    .conteudo-dica {
+        flex-direction: row; /* Alinha texto e imagens lado a lado em telas maiores */
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .texto-dica {
+        max-width: 400px;
+    }
+
+    .imagens-dica {
+        flex-direction: column; /* Imagens uma embaixo da outra */
+    }
+}
+/* Estilo para a seção de dicas */
+.dica-shampoo {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid #febcd3;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.title-dica {
+    font-size: 24px;
+    color: #db2a69;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.conteudo-dica {
+    display: flex;
+    flex-direction: column; /* Padrão para telas menores */
+    align-items: center;
+    gap: 20px;
+}
+
+/* Texto da dica */
+.texto-dica {
+    font-size: 16px;
+    color: #db2a69;
+    line-height: 1.6;
+    max-width: 600px;
+    text-align: center;
+    padding: 0 15px;
+}
+
+/* Imagens da dica */
+.imagens-dica {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.foto-dica {
+    max-width: 150px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Layout responsivo */
+@media (min-width: 768px) {
+    .conteudo-dica {
+        flex-direction: row; /* Alinha texto e imagens lado a lado em telas maiores */
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .texto-dica {
+        max-width: 400px;
+    }
+
+    .imagens-dica {
+        flex-direction: column; /* Imagens uma embaixo da outra */
+    }
+}
+/* Estilo para a seção de comprinhas */
+.dicas {
+    padding: 20px;
+    background-color: #febcd3; /* Fundo para a seção */
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Título da seção de comprinhas */
+.title-selection {
+    font-size: 28px;
+    color: #db2a69;
+    margin-bottom: 10px;
+    text-align: left; /* Alinhamento à esquerda */
+}
+
+/* Estilo para o texto de introdução */
+.dicas p {
+    font-size: 16px;
+    color: #db2a69;
+    margin-bottom: 20px;
+    text-align: left; /* Alinhamento à esquerda */
+}
+
+/* Estilo para a lista de comprinhas */
+.dicas ul {
+    list-style-type: none; /* Remove a marcação padrão */
+    padding-left: 0; /* Remove o preenchimento padrão da lista */
+}
+
+.dicas li {
+    font-size: 16px;
+    color: #db2a69;
+    margin-bottom: 10px;
+    text-align: left; /* Alinhamento à esquerda */
+}
+
+/* Estilo para links */
+.dicas a {
+    color: #db2a69; /* Cor rosa para os links */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.dicas a:hover {
+    text-decoration: underline; /* Adiciona o sublinhado no hover */
+}
+/* Estilo para a seção de cupons */
+.cupons {
+    padding: 20px;
+    background-color: #febcd3;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Título da seção de cupons */
+.title-selection {
+    font-size: 28px;
+    color: #db2a69;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Estilo para os cupom individuais */
+.cupom {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #db2a69;
+}
+
+.subtitulo-cupom {
+    font-size: 24px;
+    color: #db2a69;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.regras-cupom {
+    font-size: 16px;
+    color: #db2a69;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.cupom-imagem {
+    text-align: center;
+}
+
+.img-cupom {
+    width: 200px;
+    height: auto;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Estilo para links dentro dos cupons */
+.cupons a {
+    color: #db2a69;
+    text-decoration: none;
+}
+
+.cupons a:hover {
+    text-decoration: underline;
+}
+/* Estilo para a seção de inspiração */
+.inspiracao {
+    padding: 20px;
+    background-color: #ffd5e8;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.title-selection {
+    font-size: 28px;
+    color: #db2a69;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Estilo para os subtítulos das seções de inspiração */
+.subtitulo-inspiracao {
+    font-size: 22px;
+    color: #db2a69;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Estilo do texto de descrição */
+.inspiracao-texto {
+    font-size: 16px;
+    color: #db2a69;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Estilo para os links dos perfis */
+.inspiracao-link a {
+    color: #db2a69;
+    text-decoration: none;
+}
+
+.inspiracao-link a:hover {
+    text-decoration: underline;
+}
+/* Estilo para a seção de mídias */
+.midias {
+    padding: 20px;
+    background-color: #ffd5e8;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Título principal */
+.title-selection {
+    font-size: 28px;
+    color: #db2a69;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Texto da introdução */
+.midias-texto {
+    font-size: 16px;
+    color: #db2a69;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Subtítulo das redes sociais */
+.subtitulo-midias {
+    font-size: 22px;
+    color: #db2a69;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Estilo para os links das redes sociais */
+.midias-link a {
+    color: #db2a69;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.midias-link a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo do campo de mensagem */
+form {
+    margin-top: 20px;
+}
+
+form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+form button {
+    background-color: #db2a69;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: #c7245e;
+}
+
+/* Mensagem final */
+.mensagem-final {
+    font-size: 18px;
+    color: #db2a69;
+    text-align: center;
+    margin-top: 20px;
+}
+/* Estilo do rodapé */
+#rodape {
+    background-color: #db2a69;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+.rodape-conteudo {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.rodape-texto {
+    margin-bottom: 10px;
+}
+
+.rodape-redes {
+    margin-top: 10px;
+}
+
+.rodape-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.rodape-link:hover {
+    text-decoration: underline;
+}
